@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Number Guesser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Auto Number Guesser</h1>
+
+    <h2>Enter the range of possible random integers</h2>
+
+    <input id="startNumb" type="number" value="1">
+    <p>to</p>
+    <input id="endNumb" type="number" value="100">
+
+    <!-- cancel function and make alert if a text box is empty -->
+    <button id="chosenRange" onclick="AutoGuess()">Submit</button>
+
+    <h3 id="randomNumbDisplay"><!-- Example: Random Number: 28 --></h3>
+
+    <!-- Hide until relevant -->
+    <!-- Have a timer that makes the display wait a few seconds after the random number chosen shows above. Then also wait a half or full second in between each guess -->
+    <table id="guessDisplay">
+        <tr>
+            <th>Amount of Numbers Guessed</th>
+            <th>Number Guessed</th>
+        </tr>
+        <!-- Example: | #1 | 42 | -->
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <h3 id="correctNumb"><!-- Example: 37 Guesses to Get to 60 --></h3>
+
+    <script src="script.js"></script>
+</body>
+</html>
