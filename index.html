@@ -10,14 +10,15 @@
 <body>
     <h1>Auto Number Guesser</h1>
 
-    <h2>Enter the range of possible random integers</h2>
+    <h2>Enter 2 different numbers to be the range of a random integer. Use whole numbers and numbers that are greater than or equal to 0</h2>
 
+    <!-- Make it so they can enter only whole numbers and numbers greater than or equal to 0 -->
     <input id="startNumb" type="number" value="1">
     <p>to</p>
     <input id="endNumb" type="number" value="100">
 
-    <!-- cancel function and make alert if a text box is empty -->
-    <button id="chosenRange" onclick="AutoGuess()">Submit</button>
+    <!-- cancel function and make alert if a text box is empty, if a number is not whole, if both numbers are the same, and if a number is below 0 -->
+    <button id="submitRangeBtn" onclick="AutoGuess()">Submit</button>
 
     <h3 id="randomNumbDisplay"><!-- Example: Random Number: 28 --></h3>
 
@@ -36,6 +37,8 @@
     </table>
 
     <h3 id="correctNumb"><!-- Example: 37 Guesses to Get to 60 --></h3>
+
+    <button id="resetBtn" onclick="location.reload()">Reset</button>
 
     <script src="script.js"></script>
 </body>
